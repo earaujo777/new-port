@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio Profissional</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    body { background-color: #f2f2f2; font-family: Arial, sans-serif; }
+    header { background-color: #343a40; color: white; padding: 2rem 0; text-align: center; }
+    footer { background-color: #343a40; color: white; text-align: center; padding: 1rem 0; margin-top: 2rem; }
+    .card:hover { transform: scale(1.03); transition: transform 0.3s ease; }
+    .modal-header { background-color: #0d6efd; color: white; }
+    .apresentacao { background-color: white; padding: 2rem; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Meu Portfólio</h1>
+    <p><i class="bi bi-person-circle"></i> Desenvolvedor Web em formação</p>
+  </header>
+
+  <main class="container my-5">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card" data-bs-toggle="modal" data-bs-target="#modalProjeto1">
+          <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Projeto 1">
+          <div class="card-body">
+            <h5 class="card-title">Projeto 1 <i class="bi bi-laptop"></i></h5>
+            <p class="card-text">Landing page desenvolvida com HTML, CSS e Bootstrap.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalProjeto1" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Detalhes do Projeto 1</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+          </div>
+          <div class="modal-body">
+            <p>Este projeto foi desenvolvido como parte do curso da Alura, com foco na criação de um portfólio moderno e responsivo. Utilizei HTML5, CSS3, Bootstrap e práticas de design clean. O maior desafio foi organizar os componentes para que ficassem elegantes em todas as telas.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="apresentacao mt-5">
+      <h2>Sobre este portfólio</h2>
+      <p>Este portfólio representa minha jornada de aprendizado no desenvolvimento web. Durante esse projeto, aprendi a estruturar páginas com HTML, estilizar com CSS, usar componentes do Bootstrap, e trabalhar com modais e ícones. Estou me preparando para ingressar no mercado e este portfólio é uma vitrine das minhas habilidades.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Desenvolvido por [Seu Nome]</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
